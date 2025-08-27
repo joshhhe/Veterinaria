@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="logo">VetVida 🐾</div>
+        <ul class="nav-links">
+          <li>
+            <a href="home.html">Home 🏠</a>
+          </li>
+          <li><a href="home.html">Inicio</a></li>
+          <li><a href="index.html">Servicios</a></li>
+          <li><a href="home.html">Testimonios</a></li>
+          <li><a href="home.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ENCABEZADO -->
+    <section class="about-section">
+      <div class="about-container">
+        <h2>Bienvenido a la sección de agendamiento</h2>
+        <p>
+          Aquí podrás reservar una cita para tu mascota de forma fácil y rápida.
+          Selecciona la región, comuna, fecha, hora y el motivo de atención. ¡Tu
+          peludo amigo estará en las mejores manos! 🐶🐱
+        </p>
+      </div>
+    </section>
+
+    <div class="contenedor-form">
+      <form id="form-agenda">
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Ingrese su nombre" id="nombre" />
+
+        <label for="">Mascota</label>
+        <input type="text" placeholder="Nombre de su mascota" id="mascota" />
+
+        <label for="">Regiones</label>
+        <select name="" id="region">
+          <option value="">--Seleccione--</option>
+        </select>
+
+        <label for="">Comuna</label>
+        <select name="" id="comuna">
+          <option value="">--Seleccione--</option>
+        </select>
+
+        <label for="">Fecha</label>
+        <input type="date" id="fecha" />
+
+        <label for="">Hora</label>
+        <select name="" id="horas">
+          <option value="">--Seleccione--</option>
+        </select>
+
+        <label for="">Motivo de agenda</label>
+        <select name="" id="motivo">
+          <option value="">--Seleccione--</option>
+        </select>
+
+        <button id="btn-agendar" type="submit">Agendar</button>
+      </form>
+    </div>
+
+    <div class="contenedor-tabla">
+      <table border="1" class="tabla-agenda">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Mascota</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Motivo de agenda</th>
+            <th>Accion</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-agenda"></tbody>
+      </table>
+    </div>
+    <script src="controlador.js"></script>
+  </body>
+</html>

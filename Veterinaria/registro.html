@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="registro.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="bgVideo">
+      <source
+        src="backgrounds/mixkit-smiling-dog-in-a-forest-1560-hd-ready.mp4"
+      />
+    </video>
+
+    <div class="registro-contenedor">
+      <h1 class="titulo">Registro Cliente 🐾</h1>
+      <form class="formulario-registro" id="form-registro">
+        <label for="">Nombre</label>
+        <input
+          type="text"
+          placeholder="ingrese su nombre"
+          id="nombre-registro"
+        />
+        <label for="">Correo</label>
+        <input
+          type="email"
+          placeholder="ingrese su correo"
+          id="correo-registro"
+        />
+
+        <label for="">Rut</label>
+        <input type="text" placeholder="ingrese su rut" id="rut-registro" />
+
+        <label for="">Contraseña</label>
+        <input
+          type="password"
+          placeholder="ingrese su Contraseña"
+          id="password-registro"
+        />
+
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+
+    <script src="registro.js"></script>
+  </body>
+</html>

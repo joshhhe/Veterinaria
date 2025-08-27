@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="logo">VetVida 🐾</div>
+        <ul class="nav-links">
+          <li>
+            <a href="home.html">Home 🏠</a>
+          </li>
+          <li><a href="#nosotros">Sobre Nosotros 🌐</a></li>
+          <li><a href="#servicios">Servicios 🐕‍🦺</a></li>
+          <li><a href="#contacto">Contáctanos 📧</a></li>
+          <li id="link-registro" style="display: none">
+            <a href="registro.html">Registrarse 🔏</a>
+          </li>
+          <li id="link-iniciar-sesion" style="display: none">
+            <a href="login.html">Iniciar Sesion 🔓</a>
+          </li>
+          <li id="link-historial">
+            <a href="Historial.html">Historial 🗒️</a>
+          </li>
+          <li id="link-logOut" style="display: none">
+            <a id="btn-logout" href="#">Cerrar Sesion 🔒</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Tu mascota en buenas manos</h1>
+          <p>Atención profesional, cálida y cercana para tu mejor amigo.</p>
+          <a href="index.html" class="btn">Ver Servicios</a>
+        </div>
+        <div class="hero-image">
+          <img src="backgrounds/golden.jpg" alt="Perro con flor" />
+        </div>
+      </div>
+    </header>
+
+    <section id="nosotros" class="about-section">
+      <div class="about-container">
+        <h2>🐾 Sobre Nosotros</h2>
+        <p>
+          En <strong>VetVida</strong>, tu mascota es nuestra prioridad. 💖 Nos
+          especializamos en ofrecer atención veterinaria personalizada y con
+          altos estándares de calidad, en un entorno cálido y humano.
+        </p>
+        <p>
+          Contamos con un equipo de profesionales apasionados por los animales
+          🐶🐱, que trabajan día a día para brindar salud, bienestar y amor a
+          cada uno de nuestros pacientes.
+        </p>
+        <p>
+          💉 Servicios médicos veterinarios, 🛁 grooming, 🏥 hospitalización y
+          mucho más, todo en un solo lugar.
+        </p>
+        <p>
+          Creemos en la importancia del vínculo humano-animal 🐾 y en el poder
+          del cuidado responsable para mejorar sus vidas.
+        </p>
+        <p>
+          ¡Gracias por confiar en nosotros para cuidar a quien más quieres! 🤝❤️
+        </p>
+      </div>
+    </section>
+
+    <section id="servicios" class="services-section">
+      <div class="services-container">
+        <h2>Servicios 🐕‍🦺</h2>
+        <div class="services-list">
+          <div class="service-item">
+            <h3>Consultas Veterinarias</h3>
+            <p>
+              Atención médica especializada para mantener la salud de tu
+              mascota.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Grooming & Baños</h3>
+            <p>
+              Cuidado y estética para que tu amigo luzca siempre saludable y
+              feliz.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Vacunación</h3>
+            <p>Protección completa para prevenir enfermedades comunes.</p>
+          </div>
+          <div class="service-item">
+            <h3>Hospitalización</h3>
+            <p>
+              Atención las 24 horas para casos que requieren cuidado especial.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+      <div class="contact-container">
+        <h2>Contáctanos 📧</h2>
+        <p>
+          ¿Tienes preguntas o quieres agendar una cita? Escríbenos y te
+          responderemos pronto.
+        </p>
+        <form class="contact-form" action="#" method="POST">
+          <input type="text" name="nombre" placeholder="Tu nombre" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Tu correo electrónico"
+            required
+          />
+          <textarea
+            name="mensaje"
+            rows="4"
+            placeholder="Tu mensaje"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+    <section id="testimonios" class="testimonials-slider-section">
+      <div class="testimonials-container">
+        <h2>Lo que dicen nuestros clientes 🐾</h2>
+        <div class="testimonials-slider">
+          <div class="slide-track">
+            <div class="slide">
+              <p>
+                "Siempre atentos, amables y preocupados por cada detalle. ¡Se
+                nota que aman lo que hacen!"
+              </p>
+              <h4>— Camila Torres 🐕‍🦺</h4>
+            </div>
+            <div class="slide">
+              <p>
+                "Desde que llevé a mi conejo a VetVida, no lo cambio por nada.
+                ¡Incluso le cortan las uñas con cariño!"
+              </p>
+              <h4>— Joaquín Morales 🐇</h4>
+            </div>
+            <div class="slide">
+              <p>
+                "Profesionales increíbles, me explicaron todo con claridad y
+                trataron a mi mascota como parte de su familia."
+              </p>
+              <h4>— Isabel Ramírez 🐾</h4>
+            </div>
+            <div class="slide">
+              <p>
+                "Mi perrita Canela ama ir al grooming, siempre vuelve feliz,
+                perfumada y con un pañuelito. ¡Gracias VetVida!"
+              </p>
+              <h4>— Diego Vega 🐶</h4>
+            </div>
+            <div class="slide">
+              <p>
+                "Excelente servicio a domicilio para chequeos preventivos. ¡Muy
+                recomendable para mascotas mayores!"
+              </p>
+              <h4>— Patricia León 🏡</h4>
+            </div>
+            <div class="slide">
+              <p>
+                "Nunca había visto una clínica tan limpia, organizada y con
+                tanto amor por los animales."
+              </p>
+              <h4>— Ricardo Fuentes 🐱</h4>
+            </div>
+            <!-- Duplicados para bucle infinito -->
+            <div class="slide">
+              <p>
+                "Siempre atentos, amables y preocupados por cada detalle. ¡Se
+                nota que aman lo que hacen!"
+              </p>
+              <h4>— Camila Torres 🐕‍🦺</h4>
+            </div>
+            <div class="slide">
+              <p>
+                "Desde que llevé a mi conejo a VetVida, no lo cambio por nada.
+                ¡Incluso le cortan las uñas con cariño!"
+              </p>
+              <h4>— Joaquín Morales 🐇</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p>© 2025 VetVida 🐾. Todos los derechos reservados.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">👍</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="home.js"></script>
+  </body>
+</html>

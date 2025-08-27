@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabla Agendamientos</title>
+    <link rel="stylesheet" href="historial.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">VetVida 🐾</div>
+      <ul class="nav-links">
+        <li>
+          <a href="home.html">Home 🏠</a>
+        </li>
+        <li><a href="home.html">Servicios 🐕‍🦺</a></li>
+        <li><a href="#contacto">Contáctanos 📧</a></li>
+        <li id="link-registro" style="display: none">
+          <a href="registro.html">Registrarse 🔏</a>
+        </li>
+        <li id="link-historial" style="display: none">
+          <a href="Historial.html">Historial 🗒️</a>
+        </li>
+        <li id="link-logOut" style="display: none">
+          <a id="btn-logout" href="#">Cerrar Sesión 🔒</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="tabla-section">
+      <div class="tabla-container animate__animated animate__fadeInUp">
+        <h2>Horas Agendadas</h2>
+        <table class="tabla-agendamientos">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Mascota</th>
+              <th>Región</th>
+              <th>Comuna</th>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Motivo</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-body">
+            <!-- Aquí se insertarán las filas con JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script type="module" src="./home.js"></script>
+    <script type="module" src="./historial.js"></script>
+  </body>
+</html>

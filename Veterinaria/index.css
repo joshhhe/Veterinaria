@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+/* body {
+  background-color: #f5f7fa;
+}
+
+.contenedor-form {
+  border: 1px solid #9ca3af;
+  width: 20%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #f9fafb;
+  margin: auto;
+  box-shadow: 0 10px 34px 0 rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  border-radius: 15px;
+  padding: 5px;
+  border: 1px solid #9ca3af;
+  background-color: #f5f7fa;
+}
+
+select {
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #f5f7fa;
+  border: 1px solid #9ca3af;
+}
+label {
+  font-size: 16px;
+  color: #111827;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  border-radius: 15px;
+  border: none;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.contenedor-tabla {
+  width: 50%;
+  margin: auto;
+}
+
+.tabla-agenda {
+  width: 100%;
+  margin-top: 5%;
+  border-radius: 15px;
+  border-collapse: collapse;
+}
+
+.btn-eliminar {
+  background-color: #f33a3a;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.btn-editar {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+} */
+
+/* CONTENEDOR DEL FORMULARIO */
+.contenedor-form {
+  background-color: #f8f1e9;
+  padding: 40px 5%;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.contenedor-form h2 {
+  text-align: center;
+  color: #5c4033;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #3e2f1c;
+  font-weight: 500;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #d6c4b3;
+  border-radius: 8px;
+  font-family: inherit;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #3e2f1c;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #a47149;
+  outline: none;
+}
+
+/* BOTÓN */
+#btn-agendar {
+  margin-top: 20px;
+  background-color: #a47149;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+#btn-agendar:hover {
+  background-color: #855c3a;
+}
+
+/* TABLA DE AGENDA */
+.contenedor-tabla {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 5%;
+}
+
+.tabla-agenda {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tabla-agenda th,
+.tabla-agenda td {
+  padding: 12px 15px;
+  text-align: center;
+  color: #3e2f1c;
+  border: 1px solid #ddd0c0;
+}
+
+.tabla-agenda th {
+  background-color: #ede0d4;
+  color: #5c4033;
+  font-weight: 600;
+}
+
+.tabla-agenda td {
+  background-color: #fefaf6;
+}
+
+.tabla-agenda td button {
+  background-color: #a47149;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabla-agenda td button:hover {
+  background-color: #6f4e37;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contenedor-form,
+  .contenedor-tabla {
+    padding: 20px;
+  }
+
+  .tabla-agenda th,
+  .tabla-agenda td {
+    font-size: 0.9rem;
+  }
+}
+
+/* NAVBAR */
+.hero {
+  background-color: #ede0d4;
+  padding: 20px 5%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5c4033;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #3e2f1c;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #9c6644;
+}
+
+/* BIENVENIDA / DESCRIPCIÓN */
+.about-section {
+  background-color: #f8f1e9;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 2.4rem;
+  color: #5c4033;
+  margin-bottom: 25px;
+}
+
+.about-section p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #3e2f1c;
+  margin-bottom: 18px;
+}
+
+/* Fondo más claro para el popup */
+.popup-class {
+  border-radius: 16px;
+  background-color: #f4e2d8 !important; /* Café claro */
+  color: #3e2c23 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Título */
+.header-class {
+  color: #3e2c23 !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Párrafo */
+.p-sw {
+  color: #3e2c23;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Botón */
+.swal2-confirm {
+  background-color: #8c5e3c !important;
+  color: #fff !important;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.swal2-confirm:hover,
+.swal2-confirm:focus {
+  background-color: #734a2d !important;
+}
+
+/* Íconos personalizados */
+.swal2-icon.swal2-success {
+  border-color: #6f9e76 !important;
+  color: #6f9e76 !important;
+}
+
+.swal2-icon.swal2-error {
+  border-color: #c94c4c !important;
+  color: #c94c4c !important;
+}
+
+.swal2-icon.swal2-info {
+  border-color: #5b7b9d !important;
+  color: #5b7b9d !important;
+}
